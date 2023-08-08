@@ -1,3 +1,8 @@
-FROM alpine:3.16
+FROM node:16-alpine as base
 
-ENTRYPOINT ["sh", "-c", "echo $GITHUB_WORKSPACE"]
+WORKDIR /app
+
+COPY ./script-one.sh ./
+COPY ./script-two.sh ./
+
+RUN echo "DONE"
