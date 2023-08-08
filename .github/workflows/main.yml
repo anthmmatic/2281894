@@ -6,4 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: docker build --file ./Dockerfile --tag my/repo:$(date +%s) fold1/fold2
+      - run: |
+          docker builder prune --all --force
+          docker build --file ./Dockerfile --tag my/repo:$(date +%s) fold1/fold2
