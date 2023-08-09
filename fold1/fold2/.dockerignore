@@ -4,3 +4,4 @@ Dockerfile-prod
 example.env
 (/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$
 **/*.test-(u|a|i).[jt]s
+**/__mocks__
