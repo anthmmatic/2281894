@@ -4,5 +4,6 @@ WORKDIR /app
 
 COPY script-one.sh ./
 COPY script-two.sh ./
+COPY package.json ./
 
 RUN echo "DONE"
