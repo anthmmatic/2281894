@@ -8,4 +8,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           docker builder prune --all --force
-          docker build --file ./Dockerfile --tag my/repo:$(date +%s) fold1/fold2
+          DOCKER_BUILDKIT=1 docker build --file ./Dockerfile --tag my/repo:$(date +%s) fold1/fold2
