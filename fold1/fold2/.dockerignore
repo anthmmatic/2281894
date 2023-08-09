@@ -2,3 +2,4 @@ node_modules
 Dockerfile
 Dockerfile-prod
 example.env
+(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$
